@@ -1,0 +1,39 @@
+body{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: black;
+
+}
+
+.player{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 50%;
+}
+
+.controlls{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.next{
+	width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+	background-color: #ff7f50;
+	color: white;
+}
+
+.next:hover{
+	background-color: #ff6348;
+}
