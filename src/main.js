@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		localStorage.getItem('playlist') === null ||
 		now > JSON.parse(localStorage.getItem('youtubeExpireDate'))
 		) {
-		const api_key = key;
+		const api_key = window.key;
 		const playlist_id = 'PLL_i49YplGU2ZTUGyAo0aBe1NOoFZ-rVk';
 		const api_url = `https://www.googleapis.com/youtube/v3/playlistItems?&part=snippet&maxResults=50&playlistId=${playlist_id}&key=${api_key}`;
 		

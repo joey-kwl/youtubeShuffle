@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
 	entry: {
 		main: './src/main.js',
-		api: './src/api.js'
+		api: './src/api.js',
 	},
 	mode: 'production',
 	output: {
