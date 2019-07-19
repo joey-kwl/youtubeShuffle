@@ -1,11 +1,3 @@
-// Check if date is today.
-function isToday(someDate) {
-	const today = new Date()
-	return someDate.getDate() == today.getDate() &&
-	  someDate.getMonth() == today.getMonth() &&
-	  someDate.getFullYear() == today.getFullYear()
-}
-
 document.addEventListener('DOMContentLoaded', () => {
 	const date = new Date();
 	const now = date.getTime();
@@ -74,8 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		localStorage.getItem('playlist') === null ||
 		now > JSON.parse(localStorage.getItem('youtubeExpireDate'))
 		) {
-		// const api_key = 'AIzaSyC2m64dCuhAKPKYgX-8RW2IWcomUfaUC08';
-		const api_key = 'AIzaSyBR19HpKp_kuR8uRODReFELNm6a2Lz0bdE';
+		const api_key = key;
 		const playlist_id = 'PLL_i49YplGU2ZTUGyAo0aBe1NOoFZ-rVk';
 		const api_url = `https://www.googleapis.com/youtube/v3/playlistItems?&part=snippet&maxResults=50&playlistId=${playlist_id}&key=${api_key}`;
 		
