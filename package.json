@@ -10,7 +10,6 @@
   "devDependencies": {
     "file-loader": "^4.1.0",
     "webpack": "^4.36.1",
-    "webpack-cli": "^3.3.6",
-    "serialize-javascript": ">=2.1.1"
+    "webpack-cli": "^3.3.6"
   }
 }
